@@ -92,7 +92,7 @@ saya ${botname}, bot ini adalah Beta Multi-Device Whatsapp.
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname}*
 *⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+*📚 List-Menu QyuuBoTz :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
@@ -795,90 +795,49 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}jiso 
 ├ ${prefix}lisa  
 ╰❒ ${prefix}rose
-
-╭─❒ 「 TqTo 」 
-├ My God
-├ My Parents
-├ Fatih A.
-├ Ferdi
-├ DikaArdnt
-├ Mhankbarbar
-├ Nurutomo
-├ Rashid
-├ ZeeoneOfc
-├ Penyedia Module
-╰❒ And All Support
     `
 }
 
 exports.rules = (prefix) => {
-    return `
-*── 「 RULES AND FAQ 」 ──*
-
-1. Jangan spam bot. 🙅
-Sanksi: *❎ WARN/SOFT BLOCK*
-
-2. Jangan telepon bot. ☎️
-Sanksi: *❎ SOFT BLOCK*
-
-3. Jangan mengeksploitasi bot.😖
-Sanksi: *PERMANENT BLOCK*
-
-🗯️ Bot tidak atau lambat merespon ?
-➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan. Tetap patuhi rules‼️
-
-🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini masih private dan tidak pernah diperjual belikan ,bijaklah dalam mengetahui penipu.
-
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk sementara bot dalam status free to add.
-
-🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix. Berarti anda bisa menggunakan prefix #, . , Dan prefix wajar lainnya.
-
-🗯️ Kak, kok syaa chat owner tidak direspon?
-➡️ Owner hanya merespon pertanyaan seputar bot Dan kendala eror, tidak untuk kenalan ataupun mengemis script.
-
-
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
-
-⚠️ Segala kebijakan dan ketentuan Alphabot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
-
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan Alphabot
-😖🙏
+    return `「 *𝗥𝗨𝗟𝗘𝗦 𝗕𝗔𝗚𝗜 𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔 𝗕𝗢𝗧* 」
+    
+➙ Tolong Kasih Jeda Bot, Dan Jangan Spam Saat Menggunakan Bot.
+➙ Call/VC Bot Auto Block.
+➙ Kami tidak menyimpan gambar, video, file, audio, dan dokumen yang anda kirim
+➙ Kami tidak akan pernah meminta anda untuk memberikan informasi pribadi
+➙ Jika menemukan Bug/Error silahkan langsung lapor ke Owner bot
+➙ Ingin menambahkan bot ke grup kalian? chat owner
+➙ Konsekuensi Bila Melanggar Rules, Bot Akan Memblokir Kamu Atau Mengeluarkan Kamu Dari Grup.
 `
 }
 exports.welcome = () =>{
-	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 𝗄𝖺𝗄 🤗
+	return`𝖩𝖺𝗇𝗀𝖺𝗇 𝗅𝗎𝗉𝖺 𝗂𝗇𝗍𝗋𝗈 kak 🗿
 	
-╭ 𝖭𝖺𝗆𝖺 :
-├ 𝖴𝗆𝗎𝗋 :
-├ 𝖦𝖾𝗇𝖽𝖾𝗋 :
-├ 𝖠𝗌𝗄𝗈𝗍 :
-╰❒ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 𝗄𝖺k ~`
+💬 𝖭𝖺𝗆𝖺 :
+🔞 𝖴𝗆𝗎𝗋 :
+🧑 𝖦𝖾𝗇𝖽𝖾𝗋 :
+🌃 𝖠𝗌𝗄𝗈𝗍 :
+╰ 𝖯𝖺𝗍𝗎𝗁𝗂 𝗋𝗎𝗅𝖾𝗌 𝗀𝗋𝗎𝗉 𝗒𝖺 ~`
 }
 exports.leave = () =>{
-	return`Yah kok out 😣 Mental aman kan kak >.<
-Goodbye`
+	return`Sayonara 👋`
 }
 exports.source = () =>{
-return`*------「 SOURCE CODE 」 ------*
+return`*── 「 SOURCE 」 ──*
 
-Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://youtube.com/playlist?list=PLFCglBzFPHG7vSQaa9S3P8yfla_d9w-2-
+Mau Ngapain Banh?
+
+© Qyuu BoTz
 `
 }
 exports.tos = (ownernomer) => {
     return `
-*-------「 DONATE 」 -------*
+*── 「 DONATE 」 ──*
 
-Hai kak ☺️ 
-Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
-
-Berapapun donasi kalian akan sangat berarti 👍
+Hai kak 😊
+Berapapun donasi dari kamu akan sangat berarti bagi saya (owner) 👍
 
 Thanks!
-
 Contact person Owner:
 wa.me/${ownernomer}
 

@@ -1753,7 +1753,7 @@ break
             }
             break
 			case 'ramalanjodoh': case 'ramaljodoh': {
-                if (!text) throw `Example : ${prefix + command} Zeeone, 12, 1, 2004, Clara, 22, 2, 2004`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU, 12, 1, 2004, Clara, 22, 2, 2004`
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
@@ -1761,7 +1761,7 @@ break
             }
             break
             case 'ramalanjodohbali': case 'ramaljodohbali': {
-                if (!text) throw `Example : ${prefix + command} Zeeone, 12, 1, 2004, Clara, 22, 2, 2004`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU, 12, 1, 2004, Clara, 22, 2, 2004`
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_jodoh_bali(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
@@ -1769,7 +1769,7 @@ break
             }
             break
             case 'suamiistri': {
-                if (!text) throw `Example : ${prefix + command} Zeeone, 12, 1, 2004, Clara, 22, 2, 2004`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU, 12, 1, 2004, Clara, 22, 2, 2004`
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.suami_istri(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
@@ -1777,7 +1777,7 @@ break
             }
             break
             case 'ramalancinta': case 'ramalcinta': {
-                if (!text) throw `Example : ${prefix + command} Zeeone, 12, 1, 2004, Clara, 22, 2, 2004`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU, 12, 1, 2004, Clara, 22, 2, 2004`
                 let [nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2] = text.split`,`
                 let anu = await primbon.ramalan_cinta(nama1, tgl1, bln1, thn1, nama2, tgl2, bln2, thn2)
                 if (anu.status == false) return m.reply(anu.message)
@@ -1785,14 +1785,14 @@ break
             }
             break
             case 'artinama': {
-                if (!text) throw `Example : ${prefix + command} Zeeone`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU`
                 let anu = await primbon.arti_nama(text)
                 if (anu.status == false) return m.reply(anu.message)
                 alpha.sendText(m.chat, `⭔ *Nama :* ${anu.message.nama}\n⭔ *Arti :* ${anu.message.arti}\n⭔ *Catatan :* ${anu.message.catatan}`, m)
             }
             break
             case 'kecocokannama': case 'cocoknama': {
-                if (!text) throw `Example : ${prefix + command} Zeeone, 12, 1, 2004`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU, 12, 1, 2004`
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.kecocokan_nama(nama, tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
@@ -1800,7 +1800,7 @@ break
             }
             break
             case 'kecocokanpasangan': case 'cocokpasangan': case 'pasangan': {
-                if (!text) throw `Example : ${prefix + command} Zeeone|Clara`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU|Clara`
                 let [nama1, nama2] = text.split`|`
                 let anu = await primbon.kecocokan_nama_pasangan(nama1, nama2)
                 if (anu.status == false) return m.reply(anu.message)
@@ -1864,7 +1864,7 @@ break
             }
             break
             case 'fengshui': {
-                if (!text) throw `Example : ${prefix + command} Zeeone, 1, 2004\n\nNote : ${prefix + command} Nama, gender, tahun lahir\nGender : 1 untuk laki-laki & 2 untuk perempuan`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU, 1, 2004\n\nNote : ${prefix + command} Nama, gender, tahun lahir\nGender : 1 untuk laki-laki & 2 untuk perempuan`
                 let [nama, gender, tahun] = text.split`,`
                 let anu = await primbon.perhitungan_feng_shui(nama, gender, tahun)
                 if (anu.status == false) return m.reply(anu.message)
@@ -1912,7 +1912,7 @@ break
             }
             break
             case 'peruntungan': {
-                if (!text) throw `Example : ${prefix + command} Zeeone, 12, 1, 2004, 2022\n\nNote : ${prefix + command} Nama, tanggal lahir, bulan lahir, tahun lahir, untuk tahun`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU, 12, 1, 2004, 2022\n\nNote : ${prefix + command} Nama, tanggal lahir, bulan lahir, tahun lahir, untuk tahun`
                 let [nama, tgl, bln, thn, untuk] = text.split`,`
                 let anu = await primbon.ramalan_peruntungan(nama, tgl, bln, thn, untuk)
                 if (anu.status == false) return m.reply(anu.message)
@@ -1928,7 +1928,7 @@ break
             }
             break
             case 'sifat': case 'karakter': {
-                if (!text) throw `Example : ${prefix + command} Zeeone,12, 1, 2004`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU,12, 1, 2004`
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.sifat_karakter_tanggal_lahir(nama, tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
@@ -1936,7 +1936,7 @@ break
             }
             break
             case 'keberuntungan': {
-                if (!text) throw `Example : ${prefix + command} Zeeone, 12, 1, 2004`
+                if (!text) throw `Example : ${prefix + command} 千デQYUU, 12, 1, 2004`
                 let [nama, tgl, bln, thn] = text.split`,`
                 let anu = await primbon.potensi_keberuntungan(nama, tgl, bln, thn)
                 if (anu.status == false) return m.reply(anu.message)
@@ -1961,7 +1961,7 @@ break
             break 
 //ephoto360
 case 'youtubegold':case 'youtubesilver':case 'facebookgold':case 'facebooksilver':case 'instagramgold':case 'instagramsilver':case 'twittergold':case 'twittersilver':case 'retrotext':case 'halloweenbats':case 'texthalloween':case 'cardhalloween':case 'birthdaycake':case 'thundertext':case 'icetext':case 'milkcake':case 'snowontext':case 'metalstar':case 'dragonfire':case 'zombie3d':case 'merrycard':case 'generalexam': case 'viettel':case 'embroider':case 'graffititext':case 'graffititext2':case 'graffititext3':case 'covergraffiti':case 'moderngold':case 'capercut':case 'lovecard':case 'heartflashlight':case 'heartcup':case 'sunglightshadow':case 'graffiti3d':case 'moderngoldsilver':case 'moderngold2':case 'modengold3':case 'fabrictext':case 'masteryavatar':case 'messagecoffee':case 'announofwin':case 'writeblood':case 'horrorletter':case 'writehorror':case 'shirtclub':case 'angelwing':case 'christmasseason':case 'projectyasuo':case 'lovelycute':case 'womansday':case 'covergamepubg':case 'nameonheart':case 'funnyhalloween':case 'lightningpubg':case 'greetingcardvideo': case 'christmascard': case 'galaxybat':case 'writegalaxy':case 'starsnight':case 'noeltext':case 'textcakes':case 'pubgbirthday':case 'galaxywallpaper':case 'pubgglicthvideo': case 'pubgmascotlogo':case 'realembroidery':case 'vintagetelevision':case 'funnyanimations':case 'glowingtext':case 'textonglass':case 'cartoonstyle':case 'multicolor':case 'watercolor2':case 'textsky':case 'summerbeach':case '1917text':case 'puppycute':case 'rosebirthday':{
-if (!text) return reply(`Kirim perintah ${prefix + command} *zeeone*`)
+if (!text) return reply(`Kirim perintah ${prefix + command} *千デQYUU*`)
 reply(lang.wait())
 let texpro = global.api('alfa', '/api/ephoto360/'+command, {text:text}, 'apikey')
 sendFileFromUrl(from, texpro, lang.ok(), m)
@@ -1971,8 +1971,8 @@ sendFileFromUrl(from, texpro, lang.ok(), m)
 }
 break
 case 'steellettering':case 'letterstext':case 'barcashirt':case 'premiercup':case 'stylepoligon':case 'lifebuoys':case 'juventusshirt':{
-if (!text) return reply(`Kirim perintah ${prefix + command} *zeeone|ofc*`)
-if (!text.includes('|')) return reply(`Kirim perintah ${prefix + command} *zeeone|ofc*`)
+if (!text) return reply(`Kirim perintah ${prefix + command} *千デQYUU*`)
+if (!text.includes('|')) return reply(`Kirim perintah ${prefix + command} *千デQYUU*`)
 mm = args.join(' ')
 m1 = mm.split("|")[0];
 m2 = mm.split("|")[1]; 
@@ -1988,7 +1988,7 @@ break
 
 case 'blackpink':case 'rainbow2':case 'water_pipe':case 'halloween':case 'sketch':case 'sircuit':case 'discovery':case 'metallic2':case 'fiction':case 'demon':case 'transformer':case 'berry':case 'thunder':case 'magma':case '3dstone':case 'neon':case 'glitch':case 'harry_potter':case 'embossed':case 'broken':case 'papercut':case 'gradient':case 'glossy':case 'watercolor':case 'multicolor':case 'neon_devil':case 'underwater':case 'bear':case 'wonderfulg':case 'christmas':case 'neon_light':case 'snow':case 'cloudsky':case 'luxury2':case 'gradient2':case 'summer':case 'writing':case 'engraved':case 'summery':case '3dglue':case 'metaldark':case 'neonlight':case 'oscar':case 'minion':case 'holographic':case 'purple':case 'glossyb':case 'deluxe2':case 'glossyc':case 'fabric':case 'neonc':case 'newyear':case 'newyear2':case 'metals':case 'xmas':case 'blood':case 'darkg':case 'joker':case 'wicker':case 'natural':case 'firework':case 'skeleton':case 'balloon':case 'balloon2':case 'balloon3':case 'balloon4':case 'balloon5':case 'balloon6':case 'balloon7':case 'steel':case 'gloss':case 'denim':case 'decorate':case 'decorate2':case 'peridot':case 'rock':case 'glass':case 'glass2':case 'glass3':case 'glass4':case 'glass5':case 'glass6':case 'glass7':case 'glass8':case 'captain_as2':case 'robot':case 'equalizer':case 'toxic':case 'sparkling':case 'sparkling2':case 'sparkling3':case 'sparkling4':case 'sparkling5':case 'sparkling6':case 'sparkling7':case 'decorative':case 'chocolate':case 'strawberry':case 'koifish':case 'bread':case 'matrix':case 'blood2':case 'neonligth2':case 'thunder2':case '3dbox':case 'neon2':case 'roadw':case 'bokeh':case 'gneon':case 'advanced':case 'dropwater':case 'wall':case 'chrismast':case 'honey':case 'drug':case 'marble':case 'marble2':case 'ice':case 'juice':case 'rusty':case 'abstra':case 'biscuit':case 'wood':case 'scifi':case 'metalr':case 'purpleg':case 'shiny': case 'jewelry':case 'jewelry2':case 'jewelry3':case 'jewelry4':case 'jewelry5':case 'jewelry6':case 'jewelry7':case 'jewelry8':case 'metalh':case 'golden':case 'glitter':case 'glitter2':case 'glitter3':case 'glitter4':case 'glitter5':case 'glitter6':case 'glitter7':case 'metale':case 'carbon':case 'candy':case 'metalb':case 'gemb':case '3dchrome':case 'metalb2':case 'metalg':
 {
-if (!text) return reply(`Kirim perintah ${prefix + command} *zeeone*`)
+if (!text) return reply(`Kirim perintah ${prefix + command} *千デQYUU*`)
 reply(lang.wait())
 let texpro = global.api('alfa', '/api/textpro/'+command, {text:text}, 'apikey')
 sendFileFromUrl(from, texpro, lang.ok(), m)
@@ -2063,8 +2063,8 @@ reply(lang.err())
 })
 }
 case 'coverbannerlol':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|jinx7`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|jinx7`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} 千デQYUU`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} 千デQYUU`)
 arg = args.join(' ')
 atas = arg.split('|')[0]
 bawah = arg.split('|')[1]
@@ -2087,8 +2087,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 }}
 	break
 case 'pubglogomaker':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|women`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|women`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|women`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|women`)
 	arg = args.join(' ')
 atas = arg.split('|')[0]
 bawah = arg.split('|')[1]
@@ -2109,8 +2109,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'colorfulpubg':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|color\nUsage: ${prefix + command} zeeone|gold`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|color\nUsage: ${prefix + command} zeeone|gold`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|color\nUsage: ${prefix + command} 千デQYUU|gold`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|color\nUsage: ${prefix + command} 千デQYUU|gold`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2131,8 +2131,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'astronotspace':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|anubis`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|anubis`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|anubis`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|anubis`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2153,8 +2153,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'wallpaperaov':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|allain`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|allain`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} 千デQYUU|allain`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} 千デQYUU|allain`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2175,8 +2175,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'maketeamlogo':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|anubis`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|anubis`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|anubis`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|anubis`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2197,8 +2197,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'circlemarcotteam':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|lionsnake`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|lionsnake`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|lionsnake`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|lionsnake`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2219,8 +2219,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'wallpaperml':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|aldous`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} zeeone|aldous`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} 千デQYUU|aldous`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} 千デQYUU|aldous`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2241,8 +2241,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'dragonballfb':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} zeeone|aldous`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} zeeone|aldous`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} 千デQYUU|aldous`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} 千デQYUU|aldous`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2263,8 +2263,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'bannerofaov':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} zeeone|aphelios`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} zeeone|aphelios`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} 千デQYUU|aphelios`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} 千デQYUU|aphelios`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2285,8 +2285,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'effect3donbeach':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|background\nUsage: ${prefix + command} zeeone|beach-1`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|background\nUsage: ${prefix + command} zeeone|beach-1`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|background\nUsage: ${prefix + command} 千デQYUU|beach-1`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|background\nUsage: ${prefix + command} 千デQYUU|beach-1`)
 const style = ['beach-1','beach-2','beach-3','beach-4','beach-5','beach-6']
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
@@ -2307,8 +2307,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'cutegirlgamer':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|style-1`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|style-1`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|style-1`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|style-1`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2329,8 +2329,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'footballteam':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|nau-1`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|nau-1`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|nau-1`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|nau-1`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2351,8 +2351,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'beautifulshimmering':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|champion\nUsage: ${prefix + command} zeeone|aleister`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|champion\nUsage: ${prefix + command} zeeone|aleister`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|champion\nUsage: ${prefix + command} 千デQYUU|aleister`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|champion\nUsage: ${prefix + command} 千デQYUU|aleister`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2373,8 +2373,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'pubgcutelogo':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|aleister`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|aleister`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|aleister`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|aleister`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2395,8 +2395,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 	case 'elegantrotation':{
-		if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|bull`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|bull`)
+		if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|bull`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|bull`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2417,8 +2417,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'logogamingassasin':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|style-1`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|style-1`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|style-1`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|style-1`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2439,8 +2439,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 	case 'introvideomaker':{
-		if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|bull`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|bull`)
+		if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|bull`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|bull`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2461,8 +2461,8 @@ alpha.sendMessage(from, {video:{ url: textpro2}, mimetype: 'video/mp4', caption:
 
 	break
 case 'gaminglogo4fvs':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|ghost`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|ghost`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|ghost`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|ghost`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2483,8 +2483,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 	case 'blueneon':{
-		if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|tiger`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|tiger`)
+		if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|tiger`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|tiger`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2505,8 +2505,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 	case 'metalmascot':{
-		if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|tiger`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} zeeone|tiger`)
+		if (!text) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|tiger`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|logo\nUsage: ${prefix + command} 千デQYUU|tiger`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2527,8 +2527,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 case 'anonymous':{
-	if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|style2`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|style2`)
+	if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|style2`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|style2`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2549,8 +2549,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 	case 'lolpentakill':{
-		if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|kassadin`)
-	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|kassadin`)
+		if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|kassadin`)
+	if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|kassadin`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2571,8 +2571,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 	case 'avatarleagueofking':{
-if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|arum-6`)
-if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} zeeone|arum-6`)
+if (!text) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|arum-6`)
+if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|style\nUsage: ${prefix + command} 千デQYUU|arum-6`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2593,8 +2593,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 	case 'avatarff':{
-if (!text) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} zeeone|laura`)
-if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} zeeone|laura`)
+if (!text) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} 千デQYUU|laura`)
+if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} 千デQYUU|laura`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2616,7 +2616,7 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 	break
 	case 'overwatchwallpaper':{
 if (!text) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} zeeone|laura`)
-if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} zeeone|laura`)
+if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|character\nUsage: ${prefix + command} 千デQYUU|laura`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -2638,7 +2638,7 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 	break
 	case 'rovwallpaperhd':{
 if (!text) return reply(`Ex: ${prefix + command} nama|hero\nUsage: ${prefix + command} zeeone|lorion`)
-if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|hero\nUsage: ${prefix + command} zeeone|lorion`)
+if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|hero\nUsage: ${prefix + command} 千デQYUU|lorion`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
@@ -3099,8 +3099,8 @@ alpha.sendMessage(from, {image:{ url: textpro2}, caption: lang.ok()}, {quoted:m}
 
 	break
 	case 'bannerytcsgo':{
-if (!text) return reply(`Ex: ${prefix + command} nama|banner\nUsage: ${prefix + command} zeeone|swat`)
-if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|banner\nUsage: ${prefix + command} zeeone|swat`)
+if (!text) return reply(`Ex: ${prefix + command} nama|banner\nUsage: ${prefix + command} 千デQYUU|swat`)
+if (!text.includes('|')) return reply(`Ex: ${prefix + command} nama|banner\nUsage: ${prefix + command} 千デQYUU|swat`)
 var mon = args.join(' ')
 var m1 = mon.split("|")[0]
 var m2 = mon.split("|")[1]
